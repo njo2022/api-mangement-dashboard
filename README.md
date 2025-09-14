@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dominium - API Management Dashboard
+
+This is a [Next.js](https://nextjs.org) project with Supabase integration for API key management and validation.
+
+## 🚨 Quick Setup
+
+**If you see "supabaseKey is required" error:**
+
+1. **Run the setup script:**
+   ```bash
+   npm run setup-env
+   ```
+
+2. **Or manually create `.env.local`:**
+   ```bash
+   cp env-template.txt .env.local
+   ```
+
+3. **Configure your Supabase keys** in `.env.local`
+
+4. **See [SETUP-GUIDE.md](SETUP-GUIDE.md) for detailed instructions**
 
 ## Getting Started
 

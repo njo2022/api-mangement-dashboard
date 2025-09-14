@@ -1,0 +1,12 @@
+# Template pour les variables d'environnement Supabase
+# Copiez ce contenu dans un fichier .env.local
+
+NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+# Instructions :
+# 1. Créez un fichier .env.local à la racine du projet
+# 2. Copiez le contenu ci-dessus dans ce fichier
+# 3. Remplacez les valeurs par vos vraies clés Supabase
+# 4. Exécutez le schéma SQL dans Supabase (voir README-SUPABASE.md)
