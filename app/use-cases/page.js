@@ -12,8 +12,8 @@ export default function UseCases() {
         </div>
         
         <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-xl font-semibold mb-4">Cas d'usage</h2>
-          <p className="text-gray-600">Cette page contiendra des exemples d'utilisation de nos APIs.</p>
+          <h2 className="text-xl font-semibold mb-4">Cas d&apos;usage</h2>
+          <p className="text-gray-600">Cette page contiendra des exemples d&apos;utilisation de nos APIs.</p>
         </div>
       </div>
     </Layout>

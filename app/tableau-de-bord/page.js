@@ -44,7 +44,7 @@ export default function TableauDeBord() {
     onClose: () => setEditingKey(null)
   });
 
-  const [editingKey, setEditingKey] = useState<ApiKey | null>(null);
+  const [editingKey, setEditingKey] = useState(null);
 
   // API Key actions hook
   const {
@@ -85,7 +85,7 @@ export default function TableauDeBord() {
     openModal();
   }, [resetForm, openModal]);
 
-  const handleEditKey = useCallback((key: ApiKey) => {
+  const handleEditKey = useCallback((key) => {
     showConfirm(
       "Modifier la clé API",
       `Êtes-vous sûr de vouloir modifier la clé API "${key.name}" ?`,
@@ -98,7 +98,7 @@ export default function TableauDeBord() {
     );
   }, [showConfirm, setFormDataFromApiKey, openModal]);
 
-  const handleDeleteKey = useCallback((key: ApiKey) => {
+  const handleDeleteKey = useCallback((key) => {
     showConfirm(
       "Supprimer la clé API",
       `Êtes-vous sûr de vouloir supprimer définitivement la clé API "${key.name}" ? Cette action est irréversible.`,

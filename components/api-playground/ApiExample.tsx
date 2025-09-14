@@ -46,10 +46,10 @@ export function ApiExample({ apiKey }: ApiExampleProps) {
     <div className="bg-white rounded-xl border border-gray-200 p-6 mt-6">
       <div className="mb-4">
         <h3 className="text-lg font-semibold text-gray-900 mb-2">
-          Test d'appel API
+          Test d&apos;appel API
         </h3>
         <p className="text-gray-600 text-sm">
-          Utilisez votre clé API validée pour tester un appel à l'API.
+          Utilisez votre clé API validée pour tester un appel à l&apos;API.
         </p>
       </div>
 
@@ -81,7 +81,7 @@ export function ApiExample({ apiKey }: ApiExampleProps) {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
-              <span>Tester l'API</span>
+              <span>Tester l&apos;API</span>
             </>
           )}
         </button>
@@ -107,7 +107,7 @@ export function ApiExample({ apiKey }: ApiExampleProps) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div className="flex-1">
-                <h4 className="text-sm font-medium text-green-900">Réponse de l'API</h4>
+                <h4 className="text-sm font-medium text-green-900">Réponse de l&apos;API</h4>
                 <pre className="text-sm text-green-700 mt-2 whitespace-pre-wrap overflow-x-auto">
                   {JSON.stringify(response, null, 2)}
                 </pre>

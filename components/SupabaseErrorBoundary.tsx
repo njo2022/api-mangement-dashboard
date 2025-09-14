@@ -38,14 +38,14 @@ export function SupabaseErrorBoundary({ children }: SupabaseErrorBoundaryProps) 
             </h1>
             
             <p className="text-gray-600 mb-6">
-              {error || 'Les variables d\'environnement Supabase ne sont pas configurées.'}
+              {error || 'Les variables d&apos;environnement Supabase ne sont pas configurées.'}
             </p>
 
             <div className="bg-gray-50 rounded-lg p-4 mb-6 text-left">
               <h3 className="font-semibold text-gray-900 mb-2">Solution rapide :</h3>
               <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
                 <li>Créez un fichier <code className="bg-gray-200 px-1 rounded">.env.local</code> à la racine du projet</li>
-                <li>Ajoutez les variables d'environnement Supabase</li>
+                <li>Ajoutez les variables d&apos;environnement Supabase</li>
                 <li>Redémarrez le serveur de développement</li>
               </ol>
             </div>
@@ -74,7 +74,7 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key`;
             </div>
 
             <div className="mt-6 text-sm text-gray-500">
-              <p>Voir <code className="bg-gray-200 px-1 rounded">SETUP-GUIDE.md</code> pour plus d'informations</p>
+              <p>Voir <code className="bg-gray-200 px-1 rounded">SETUP-GUIDE.md</code> pour plus d&apos;informations</p>
             </div>
           </div>
         </div>

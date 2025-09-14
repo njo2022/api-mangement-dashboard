@@ -15,7 +15,7 @@ export default function ApiPlayground() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">API Playground</h1>
           <p className="text-gray-600 mt-2">
-            Testez et validez vos clés API pour vous assurer qu'elles fonctionnent correctement
+            Testez et validez vos clés API pour vous assurer qu&apos;elles fonctionnent correctement
           </p>
         </div>
 

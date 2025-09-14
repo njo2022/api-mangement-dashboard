@@ -12,7 +12,7 @@ export default function ApiPlayground() {
         </div>
         
         <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-xl font-semibold mb-4">Test d'API</h2>
+          <h2 className="text-xl font-semibold mb-4">Test d&apos;API</h2>
           <p className="text-gray-600">Cette page sera bientôt disponible pour tester vos clés API.</p>
         </div>
       </div>
