@@ -1,12 +1,18 @@
-# Template pour les variables d'environnement Supabase
+# Template pour les variables d'environnement
 # Copiez ce contenu dans un fichier .env.local
 
+# Supabase Configuration
 NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
+# Clerk Configuration
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your-clerk-publishable-key
+CLERK_SECRET_KEY=sk_test_your-clerk-secret-key
+
 # Instructions :
 # 1. Créez un fichier .env.local à la racine du projet
 # 2. Copiez le contenu ci-dessus dans ce fichier
-# 3. Remplacez les valeurs par vos vraies clés Supabase
-# 4. Exécutez le schéma SQL dans Supabase (voir README-SUPABASE.md)
+# 3. Remplacez les valeurs par vos vraies clés
+# 4. Pour Clerk : créez un compte sur https://clerk.com
+# 5. Exécutez le schéma SQL dans Supabase (voir database/auth-schema.sql)

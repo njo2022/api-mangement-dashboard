@@ -1,18 +1,21 @@
 import { useState, useEffect } from 'react'
+import { useUser } from '@clerk/nextjs'
 
 export function useSubscription(userId) {
+  const { user } = useUser()
+  const actualUserId = userId || user?.id
   const [subscription, setSubscription] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
   const fetchSubscription = async () => {
-    if (!userId) return
+    if (!actualUserId) return
     
     try {
       setLoading(true)
       setError(null)
       
-      const response = await fetch(`/api/user/subscription?userId=${userId}`)
+      const response = await fetch(`/api/user/subscription?userId=${actualUserId}`)
       
       if (!response.ok) {
         throw new Error('Failed to fetch subscription')
@@ -57,7 +60,7 @@ export function useSubscription(userId) {
 
   useEffect(() => {
     fetchSubscription()
-  }, [userId])
+  }, [actualUserId])
 
   return {
     subscription,

@@ -1,18 +1,21 @@
 import { useState, useEffect } from 'react'
+import { useUser } from '@clerk/nextjs'
 
 export function useApiKeys(userId) {
+  const { user } = useUser()
+  const actualUserId = userId || user?.id
   const [apiKeys, setApiKeys] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
   const fetchApiKeys = async () => {
-    if (!userId) return
+    if (!actualUserId) return
     
     try {
       setLoading(true)
       setError(null)
       
-      const response = await fetch(`/api/api-keys?userId=${userId}`)
+      const response = await fetch(`/api/api-keys?userId=${actualUserId}`)
       
       if (!response.ok) {
         throw new Error('Failed to fetch API keys')
@@ -39,7 +42,7 @@ export function useApiKeys(userId) {
           name,
           type,
           keyValue,
-          userId
+          userId: actualUserId
         }),
       })
 
@@ -100,7 +103,7 @@ export function useApiKeys(userId) {
 
   useEffect(() => {
     fetchApiKeys()
-  }, [userId])
+  }, [actualUserId])
 
   return {
     apiKeys,

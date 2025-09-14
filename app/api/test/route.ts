@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { validateApiKey } from '@/utils/apiValidation';
+import { validateApiKeyServer } from '@/lib/serverApiValidation';
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,8 +15,8 @@ export async function POST(request: NextRequest) {
 
     const apiKey = authHeader.substring(7); // Enlever "Bearer "
 
-    // Valider la clé API
-    const isValid = await validateApiKey(apiKey);
+    // Valider la clé API côté serveur
+    const isValid = await validateApiKeyServer(apiKey);
     
     if (!isValid) {
       return NextResponse.json(

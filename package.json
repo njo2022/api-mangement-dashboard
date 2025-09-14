@@ -10,9 +10,12 @@
     "setup-supabase": "node scripts/setup-supabase.js",
     "setup-env": "node scripts/setup-env.js",
     "clean-restart": "node scripts/clean-restart.js",
+    "clean-cache": "node scripts/clean-cache.js",
+    "setup-clerk": "node scripts/setup-clerk.js",
     "add-test-keys": "node scripts/add-test-api-keys.js"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.32.0",
     "@supabase/supabase-js": "^2.57.4",
     "dotenv": "^17.2.2",
     "next": "15.5.3",
